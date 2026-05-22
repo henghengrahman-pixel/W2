@@ -64,8 +64,8 @@ async def send_prediction(pasaran):
     teks = f"<b>🧿 PREDIKSI PASARAN {pasaran.upper()}</b>\n\n{generate_prediction()}"
     buttons = types.InlineKeyboardMarkup()
     buttons.add(
-        types.InlineKeyboardButton("🎮 LOGIN OMTOGEL", url="https://omtogelbonanza.xyz/"),
-        types.InlineKeyboardButton("🎁 PROMO OMTOGEL", url="https://preciseurl.org/PROMO_OMTOGEL")
+        types.InlineKeyboardButton("🎮 LOGIN OMTOGEL", url="https://omtogelfine.org/"),
+        types.InlineKeyboardButton("🎁 PROMO OMTOGEL", url="https://promosiku13.omtogel-prediksi.com/")
     )
     for channel in CHANNEL_IDS:
         msg = await bot.send_message(chat_id=channel, text=teks, reply_markup=buttons)
